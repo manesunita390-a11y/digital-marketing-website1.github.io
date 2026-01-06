@@ -3,130 +3,75 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Digital Marketing Agency</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <style>
-    /* Reset */
-    * {margin:0; padding:0; box-sizing:border-box; font-family: 'Inter', sans-serif;}
-    body {line-height:1.6; color:#333;}
-    a {text-decoration:none; color:inherit;}
-    
-    /* Navbar */
-    nav {display:flex; justify-content:space-between; align-items:center; padding:20px 50px; background:#0d6efd; color:white;}
-    nav .logo {font-size:1.8rem; font-weight:bold;}
-    nav ul {display:flex; list-style:none;}
-    nav ul li {margin-left:30px;}
-    nav ul li a:hover {color:#ffc107;}
-    
-    /* Hero Section */
-    .hero {display:flex; flex-direction:column; justify-content:center; align-items:center; height:100vh; background:#f5f5f5; text-align:center;}
-    .hero h1 {font-size:3rem; margin-bottom:20px;}
-    .hero p {font-size:1.2rem; margin-bottom:30px;}
-    .hero button {padding:10px 20px; background:#0d6efd; color:white; border:none; border-radius:5px; cursor:pointer;}
-    .hero button:hover {background:#ffc107; color:#000;}
-    
-    /* Sections */
-    section {padding:80px 50px;}
-    section h2 {font-size:2.5rem; text-align:center; margin-bottom:50px; color:#0d6efd;}
-    
-    /* Services */
-    .services {display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:30px;}
-    .service-card {padding:20px; border:1px solid #ddd; border-radius:10px; text-align:center; transition:0.3s; background:white;}
-    .service-card:hover {transform:translateY(-5px); box-shadow:0 10px 20px rgba(0,0,0,0.1);}
-    .service-card h3 {margin-bottom:15px; color:#0d6efd;}
-    
-    /* Portfolio */
-    .portfolio {display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:20px;}
-    .portfolio img {width:100%; border-radius:10px;}
-    
-    /* Contact Form */
-    .contact form {max-width:600px; margin:0 auto; display:flex; flex-direction:column;}
-    .contact input, .contact textarea {padding:15px; margin-bottom:20px; border:1px solid #ddd; border-radius:5px; font-size:1rem;}
-    .contact button {padding:15px; background:#0d6efd; color:white; border:none; border-radius:5px; cursor:pointer;}
-    .contact button:hover {background:#ffc107; color:#000;}
-    
-    /* Footer */
-    footer {padding:20px; text-align:center; background:#0d6efd; color:white;}
-  </style>
+  <title>Grow Digital Solutions</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Navbar -->
-  <nav>
-    <div class="logo">DigitalEdge</div>
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#portfolio">Portfolio</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
 
-  <!-- Hero -->
-  <section class="hero" id="home">
-    <h1>Grow Your Business Online</h1>
-    <p>We provide professional digital marketing, branding, and web solutions to boost your business.</p>
-    <button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Get Started</button>
+  <header class="navbar">
+    <div class="container">
+      <a href="#" class="logo">GrowDigital<span>+</span></a>
+      <nav>
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Grow Your Business Online</h1>
+      <p>Customized digital solutions to take your brand to the next level.</p>
+      <a href="#services" class="btn">Explore Services</a>
+    </div>
   </section>
 
-  <!-- Services -->
-  <section id="services">
+  <section id="services" class="services-section container">
     <h2>Our Services</h2>
-    <div class="services">
+    <div class="services-grid">
       <div class="service-card">
-        <h3>Social Media Marketing</h3>
-        <p>Engage your audience with targeted campaigns and increase your brand visibility.</p>
+        <h3>Web Development</h3>
+        <p>We build robust, responsive websites tailored to your brand.</p>
+      </div>
+      <div class="service-card">
+        <h3>Marketing Strategy</h3>
+        <p>Integrated marketing plans that grow traffic & conversions.</p>
       </div>
       <div class="service-card">
         <h3>SEO Optimization</h3>
-        <p>Boost your search engine rankings and attract organic traffic to your website.</p>
-      </div>
-      <div class="service-card">
-        <h3>Brand Identity</h3>
-        <p>Create a unique and memorable brand identity for your business.</p>
-      </div>
-      <div class="service-card">
-        <h3>Web Design & Development</h3>
-        <p>Responsive, modern websites tailored to your business needs.</p>
+        <p>Improve search rankings & visibility with SEO best practices.</p>
       </div>
     </div>
   </section>
 
-  <!-- Portfolio -->
-  <section id="portfolio">
-    <h2>Our Work</h2>
-    <div class="portfolio">
-      <img src="https://via.placeholder.com/400x300.png?text=Project+1" alt="Project 1">
-      <img src="https://via.placeholder.com/400x300.png?text=Project+2" alt="Project 2">
-      <img src="https://via.placeholder.com/400x300.png?text=Project+3" alt="Project 3">
-      <img src="https://via.placeholder.com/400x300.png?text=Project+4" alt="Project 4">
+  <section id="about" class="about-section">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>GrowDigital+ is committed to helping businesses achieve digital success. We offer services that empower your online presence with innovation and performance.</p>
     </div>
   </section>
 
-  <!-- Contact -->
-  <section class="contact" id="contact">
-    <h2>Contact Us</h2>
-    <form action="https://formspree.io/f/yourformid" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <input type="text" name="subject" placeholder="Subject" required>
-      <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    &copy; 2025 DigitalEdge. All Rights Reserved.
+  <footer id="contact">
+    <div class="container footer-content">
+      <div class="footer-info">
+        <h3>Get in Touch</h3>
+        <p>Email: hello@growdigitalplus.com</p>
+        <p>Phone: +971 50 312 2672</p>
+      </div>
+      <div class="newsletter">
+        <h3>Subscribe</h3>
+        <form>
+          <input type="email" placeholder="Your email">
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <p class="footer-copy">© 2026 GrowDigital+ — All Rights Reserved.</p>
   </footer>
 
-  <script>
-    // Smooth scroll
-    document.querySelectorAll('nav ul li a').forEach(anchor => {
-      anchor.addEventListener('click', function(e){
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
-      });
-    });
-  </script>
 </body>
 </html>
+
